@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: Verdana, sans-serif;
 }
 address {
   display: block;
@@ -20,7 +21,7 @@ ul {
   
   li a {
     display: block;
-    color: #049DD9;
+    color: #670F4C;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -29,7 +30,7 @@ ul {
   
   
   li a:hover {
-    background-color: #05C7F2;
+    background-color: #361F33;
     color: white;
   }
 
@@ -38,19 +39,14 @@ ul {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: #049DD9;
+    background-color: #670F4C;
     color: white;
     width: 100%;
     height: 2%;
 }
 
-.navbar{
-    box-shadow: 2px 2px 2px grey;
-}
-
 .booking{
-  margin-top: 3px;
-  height: 400px;
+  height: 600px;
   width: 100%;
   background-image: url("../images/background.jpg");
   background-size: 100% 100%;
@@ -65,15 +61,22 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: #333;
+  color: white;
+  background-color: #361F33;
   opacity: 0.9;
   width: 55%;
   height: 30%;
-  padding: 5px;
+  padding: 20px;
 }
 
 .active{
-  background-color: #4EA64B;
+  background-color: #CE225A;
   color: white;
   border-radius: 5;
+}
+
+.search{
+  width: 30%;
+  height: 15%;
+  border-radius: 10;
 }
