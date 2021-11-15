@@ -1,11 +1,18 @@
-body{
-    padding: 0px;
-    margin: 0px;
-    margin-right: 0px;
-    font-family: Verdana, sans-serif;
+body {
+  padding: 0px;
+  margin: 0px;
+  margin-right: 0px;
+  font-family: Verdana, sans-serif;
 }
 a {
   text-decoration: none;
+  color: #ce225a;
+}
+a:hover {
+  background-color: #670f4c;
+}
+a:active {
+  background-color: #201c2b;
 }
 
 address {
@@ -14,44 +21,43 @@ address {
   font-family: Verdana, sans-serif;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: #670F4C;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-weight: 400;
-  }
-  
-  
-  li a:hover {
-    background-color: #361F33;
-    color: white;
-  }
-
-.icon{
-  margin-right: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #670F4C;
-    color: white;
-    height: 2%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
 }
 
-.booking{
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #670f4c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+li a:hover {
+  background-color: #361f33;
+  color: white;
+}
+
+.icon {
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #670f4c;
+  color: white;
+  height: 2%;
+}
+
+.booking {
   width: 100%;
   height: 600px;
   background-image: url("../images/background.jpg");
@@ -62,66 +68,197 @@ ul {
 }
 
 /*Search*/
-.field-container{
+.field-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: white;
-  background-color: #361F33;
+  background-color: #361f33;
   opacity: 0.9;
   width: 55%;
   height: 30%;
   padding: 20px;
 }
 
-.active{
-  background-color: #CE225A;
+.active {
+  background-color: #ce225a;
   color: white;
   border-radius: 5;
 }
 
-.search{
+.search {
   width: 30%;
   height: 15%;
   border-radius: 10;
 }
 
-.site-deals{
-  display: flex;
-  flex-direction: row;
-  height: 300px;
-  margin-left: 60px;
-}
-
-.last-post{
-  width: 35%;
-  background-image: url("../images/usa.jpg");
-  background-size: 100% 100%;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px;
-}
-
-.title{
-  padding-left: 20px;
-  color: white;
-}
-
-.price{
-  padding: 10px;
-  background-color: #CE225A;
-  color: white;
+.title {
+  padding-right: 20px;
   float: right;
-  border-radius: 20px;
+  color: #ce225a;
+  font-weight: 800;
 }
 
-.image-link{
+.price {
+  padding: 10px;
+  background-color: #ce225a;
+  color: white;
+  border-radius: 20px;
+  float: left;
+}
+
+.ofert {
+  margin-top: 360px;
+  color: white;
+  background-color: #ce225a;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.title-post {
+  color: #e95150;
+  font-weight: 800;
+  padding-left: 20px;
+}
+
+.price-post {
+  padding: 5px;
+  color: white;
+  background-color: #e95150;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.image-link {
   text-decoration: none;
 }
 
-.footer{
-  background-color: #361F33;
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%;
+  /* margin: 20px 80px 0 0; */
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.main-post {
+  background-image: url("../images/Paris.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px;
+  width: 30%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+.other-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.left-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.right-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+}
+
+.first-post {
+  background-image: url("../images/Thailand.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.second-post {
+  background-image: url("../images/maldives-island.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.third-post {
+  background-image: url("../images/Tokyo.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.fourth-post {
+  background-image: url("../images/Finland.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px;
+  width: 80%;
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #361f33;
   height: 20%;
   padding: 20px;
   color: white;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.photo {
+  width: 35%;
+  height: 100%;
+  margin-left: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 65%;
+  height: 100%;
+  margin-left: 30px;
+  color: #361f33;
 }
