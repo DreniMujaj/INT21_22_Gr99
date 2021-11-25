@@ -1,7 +1,7 @@
 .theatre {
   width: 100%;
   height: 600px;
-  background-image: url("../images/background.jpg");
+  background-image: url("images\ballet-production-performance-don-quixote-45258.png");
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -44,6 +44,8 @@
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
+  margin-top: 10%;
+  margin-bottom:5% ;
   font-size: 0.9em;
   min-width: 100%;
   border-radius: 5px 5px 0 0;
@@ -90,18 +92,44 @@
   margin-left: 60px;
 }
 
-.theatre-picks {
+
+.photo-grid {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; 
+  align-items: center;
+  scroll-padding-right: 5%;
+}
+.photo-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+  height: 150px;
+}
+#first-item{
+  order: 1;
+}
+#last-item{
+  order:-1;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
   width: 19%;
   height: 100%;
   border-radius: 5px;
-  box-shadow: 1px 2px 2px 1px;
-  margin-left: 40px;
-}
-.photo-picks {
-  height: min-contesnt;
-  width: min-content;
-  border-radius: 5px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  box-shadow: 20px;
   overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  color: white;
+  font-family:  'Gill Sans', 'Gill Sans MT';
+  background:#670f4c;
+  padding: 20px;
 }
