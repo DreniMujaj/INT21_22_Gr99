@@ -339,17 +339,11 @@ ul {
   margin-bottom: 20px;
 }
 
-.footer {
-  background-color: #361f33;
-  height: 20%;
-  padding: 20px;
-  color: white;
-}
-
 .experiences {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-left: 80px;
   width: 90%;
   height: 300px;
