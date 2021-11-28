@@ -1,7 +1,7 @@
 .theatre {
   width: 100%;
   height: 600px;
-  background-image: url("../images/ballet-production-performance-don-quixote-45258.png");
+  background-image: url("../images/wp2411501.jpg");
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 .body{
-  padding: 60px;
+  padding: 80px;
 }
 .button {
   border: none;
@@ -25,7 +25,7 @@
   cursor: pointer;
   width: 30%;
   height: 15%;
-  border-radius: 10;
+  border-radius: 10px;
 }
 .button1 {
   background-color: #4caf50;
@@ -34,45 +34,6 @@
   background-color: #008cba;
 } /* Blue */
 
-.content-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  margin-bottom: 5%;
-  font-size: 0.9em;
-  min-width: 100%;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.content-table thead tr {
-  background-color: #670f4c;
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
-}
-
-.content-table th,
-.content-table td {
-  padding: 12px 15px;
-}
-
-.content-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.content-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.content-table tbody tr:last-of-type {
-  border-bottom: 2px solid#670f4c;
-}
-
-.content-table tbody tr.active-row {
-  font-weight: bold;
-  color: #670f4c;
-}
 
 
 /*For the main Cinema picks*/
@@ -124,15 +85,14 @@
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  height: 400px;
+  height: 300px;
   width: 100%;
-  margin-top: 10px;
-}
+ }
 
 .container .box{
   position: relative;
   width: 30%;
-  height: 60%;
+  height: 72%;
   background-color: black;
   box-sizing:border-box;
   overflow: hidden;
@@ -163,7 +123,7 @@
   text-align: center;
   padding:20px;
   box-sizing:border-box;
-  transition:0.5s ;
+  transition:0.8s ;
   opacity:0;
 }
 .container .box:hover .content{
@@ -186,10 +146,18 @@
 }
 
 /* For the Secondary Theatre Pics */
-.container .square{
+.other-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  height: 400px;
+  width: 100%;
+ 
+}
+.other-container .square{
   position: relative;
-  width: 20%;
-  height: 70%;
+  width: 23%;
+  height: 60%;
   background-color: black;
   box-sizing: border-box;
   overflow: hidden;
@@ -198,7 +166,7 @@
   flex-wrap: wrap;
 }
 
-.container .square .foto{
+.other-container .square .foto{
   position: absolute;
    top:0;
    left:0;
@@ -209,7 +177,7 @@
    z-index:1;
  }
  
- .container .square:hover .foto{
+ .other-container .square:hover .foto{
    top: 20px;
    left:calc(50%-40px);
    width: 80px;
@@ -217,7 +185,7 @@
    border-radius:50%;
  }
  
- .container .square .content{
+ .other-container .square .content{
    position:absolute;
    top:100%;
    height: calc(100%-100px);
@@ -227,12 +195,12 @@
    transition:0.5s ;
    opacity:0;
  }
- .container .square:hover .content{
+ .other-container .square:hover .content{
    top: 100px;
    opacity:1;
  }
  
- .container .square .content h3{
+ .other-container .square .content h3{
    margin: 0 0 10px;
    padding: 0 ;
    color: #fff;
@@ -245,3 +213,47 @@
    color:#fff;
    font-size: 15px;
  }
+
+
+
+/*per tabele te Record breakers*/
+
+ .content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  margin-bottom: 2%;
+  font-size: 0.9em;
+  min-width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #670f4c;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid#670f4c;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #670f4c;
+}
