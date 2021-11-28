@@ -37,12 +37,12 @@ ul {
   background-color: white;
 }
 
-li {
+.navbarLi {
   float: left;
 }
 
-li a {
-  display: block;
+.navbarLiLink {
+  display: inline-block;
   color: #670f4c;
   text-align: center;
   padding: 14px 16px;
@@ -50,7 +50,7 @@ li a {
   font-weight: 400;
 }
 
-li a:hover {
+.navbarLi a:hover {
   background-color: #361f33;
   color: white;
 }
