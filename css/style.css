@@ -24,11 +24,6 @@ a:active {
   border-radius: 5px;
 }
 
-address {
-  display: block;
-  font-style: italic;
-  font-family: Verdana, sans-serif;
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -94,6 +89,14 @@ ul {
   justify-content: space-between;
 }
 
+.booking-down {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .search {
   width: 140%;
   height: 30%;
@@ -106,14 +109,6 @@ ul {
   border: none;
 }
 
-.booking-down {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .button {
   background-color: #ce225a;
   border: none;
@@ -121,7 +116,6 @@ ul {
   padding: 14px 40px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -347,10 +341,6 @@ ul {
   margin-left: 80px;
   width: 90%;
   height: 300px;
-}
-
-#first {
-  margin-left: 0;
 }
 
 .post-experiences {
