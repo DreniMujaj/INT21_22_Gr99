@@ -15,6 +15,23 @@
   justify-content: center;
   align-items: center;
 }
+
+
+@font-face {
+  font-family: 'Marcha';
+  src: url('Marcha.eot');
+  src: url('Marcha.eot?#iefix') format('embedded-opentype'),
+      url('Marcha.woff2') format('woff2'),
+      url('Marcha.woff') format('woff'),
+      url('Marcha.ttf') format('truetype'),
+      url('Marcha.svg#Marcha') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-size: large;
+}
+
+
 .search-container {
   width: 60%;
   height: 30%;
@@ -133,6 +150,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  
 }
 
 .container .box .content {
