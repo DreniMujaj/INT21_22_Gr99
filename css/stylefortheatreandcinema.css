@@ -102,7 +102,6 @@
   box-shadow: 20px;
   overflow: hidden;
 }
-
 .text {
   position: absolute;
   color: white;
@@ -112,7 +111,13 @@
   padding: 20px;
   text-transform: capitalize;
 }
+.photo-grid-item:hover .text{
+  transform: translate(50px, 100px);
+}
 
+.photo-grid-item:hover{
+  transform: rotate(20deg);
+}
 /* For the Main Theatre Pics Section*/
 .container {
   display: flex;
@@ -254,7 +259,7 @@
   color:black;
 }
 
-.thelinks a.active{
+.thelinks a:active{
   color:blue;
 }
 
@@ -344,8 +349,16 @@
   border-radius: 5px;
 }
 
+.dropdown:hover .dropbtn{
+transform: scale(1,1.5);
+}
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
+}
+
+.move:hover{
+  transform:skew(20deg);
 }
