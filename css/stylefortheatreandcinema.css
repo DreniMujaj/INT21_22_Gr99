@@ -1,12 +1,16 @@
 .body {
   padding: 80px;
+  background-color:whitesmoke;
 }
 
 .theatre-search {
   width: 100%;
   height: 600px;
   background-image: url("../images/wp2411501.jpg");
+  background-attachment: fixed;
+  background-repeat:no-repeat;
   background-size: 100% 100%;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,8 +90,10 @@
   position: absolute;
   color: white;
   font-family: "Gill Sans", "Gill Sans MT";
+  font-style:oblique;
   background: #670f4c;
   padding: 20px;
+  text-transform: capitalize;
 }
 
 /* For the Main Theatre Pics Section*/
@@ -146,6 +152,7 @@
   padding: 0;
   color: #fff;
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .container .box p {
@@ -210,6 +217,7 @@
   padding: 0;
   color: #fff;
   font-size: 20px;
+  text-transform:capitalize;
 }
 
 .other-container .square p {
@@ -217,6 +225,19 @@
   padding: 0;
   color: #fff;
   font-size: 15px;
+}
+
+
+.thelinks a:link{
+  color: maroon;
+}
+
+.thelinks a:visited{
+  color:black;
+}
+
+.thelinks a.active{
+  color:blue;
 }
 
 /*for the Record breakers table*/
@@ -237,6 +258,7 @@
   color: #ffffff;
   text-align: left;
   font-weight: bold;
+  border-style:groove;
 }
 
 .content-table th,
@@ -276,6 +298,7 @@
   color: #ffffff;
   text-align: left;
   font-weight: bold;
+  border-style: double;
 }
 .rate-table th,
 .rate-table td {
