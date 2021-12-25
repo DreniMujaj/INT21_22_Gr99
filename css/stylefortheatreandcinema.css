@@ -376,13 +376,11 @@ transform: scale(1,1.5);
 }
 
 
+/*FAQ*/
 .move1{
   display:flex;
   flex-direction: row;
   justify-content: space-around;
-}
-.move:hover{
-  transform:skew(20deg);
 }
 
 .container1 {
@@ -417,4 +415,20 @@ transform: scale(1,1.5);
   0% {transform:rotateY(360deg);}
   50% {transform:rotateY(180deg);}
   100% {transform:rotateY(0deg)}
+}
+
+
+
+
+
+/*rating*/
+.move table{
+  background-color: whitesmoke; 
+  outline-style: dotted; 
+  outline-color: maroon; 
+  outline-width: 2px;
+  outline-offset: 3px;
+}
+.move:hover{
+  transform:skew(20deg);
 }
