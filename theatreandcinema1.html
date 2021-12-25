@@ -214,8 +214,16 @@
     <li><a href="https://www.unicorntheatre.com"> The Unicorn Theatre></a></li>
     <li><a href="https://coliseum.theatre-tickets.com/tickets">The London Coliseum></a></li>
   </ul>
-
-  <form action=" ">
+</div>
+<div class="available">
+    <p> <pre>People attending        Event No.  </pre> <p>
+    <form oninput="sumresult.value = parseInt(A.value) 
+    - parseInt(B.value)">
+<input type="number" name="A" value="10" /> +
+<input type="range" name="B" value="5" min="0" max="5" />
+<!-- output tag -->Availability: <output name="sumresult"></output>
+<br>
+<form action=" ">
     <label for="location">Or, Choose your current location:</label>
     <input list="locations" name="location" id="location">
     <datalist id="locations">
@@ -227,6 +235,7 @@
     </datalist>
     <input type="submit" value="Search">
   </form>
+</form>
 </div>
 
 
