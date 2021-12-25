@@ -216,12 +216,14 @@
   </ul>
 </div>
 <div class="available">
-    <p> <pre>People attending        Event No.  </pre> <p>
+    <div style="flex-direction: column;">
+    <p> <pre>People attending        Event No.  </pre> </p>
     <form oninput="sumresult.value = parseInt(A.value) 
     - parseInt(B.value)">
 <input type="number" name="A" value="10" /> +
 <input type="range" name="B" value="5" min="0" max="5" />
 <!-- output tag -->Availability: <output name="sumresult"></output>
+</form>
 <br>
 <form action=" ">
     <label for="location">Or, Choose your current location:</label>
@@ -235,7 +237,14 @@
     </datalist>
     <input type="submit" value="Search">
   </form>
-</form>
+  </div>
+  <div style="flex-direction: column;margin-right: 0px; margin-left: auto; ">
+    <p style="color:maroon">Thetare Discount for our clients: 111789HZ</p>
+    <audio controls> <source src="audio\ThetareDiscount.mp3" type="audio/mpeg"></audio>
+    <p style="color:maroon">Cinema Discount for our clients: 3467JP10</p>
+    <audio controls> <source src="audio\CinemaDiscount.mp3" type="audio/mpeg"></audio>
+
+</div>
 </div>
 
 
