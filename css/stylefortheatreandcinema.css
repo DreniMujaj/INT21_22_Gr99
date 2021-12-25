@@ -272,10 +272,19 @@
 
 
 .available{
-  background-color:rgb(248, 227, 248);
+  background-color:rgb(221, 188, 188);
   display: flex;
   position: relative;
   flex-direction: row;
+  border-radius: 7px;
+}
+
+.promotion{
+  display: flex;
+  flex-direction: row;
+  position:relative;
+
+  
 }
 
 
