@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/stylefortheatreandcinema.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <script defer src="fontawesome/js/all.js"></script>
+
+
     <style>
         mark { 
             background-color:khaki;
@@ -320,22 +322,42 @@
         <th>FAQ</th>
     </thead>
     <tr>
-        <td> How to order a ticket?
+        <td> <p id="demo">How to order a ticket? </p>
             <div class="dropdown">
-                <button class="dropbtn">Ask</button>
+                <script>
+                    function myFunction() {
+                      document.getElementById("demo").innerHTML = "Use our online methoods, or visit you closest theatre!"; 
+                      document.getElementById("demo").style.color = "red";     
+                    }
+                    </script>
+                <button class="dropbtn" type="button" onclick="myFunction()">Ask</button>
                 </div>
                </td>
     </tr>
     <tr>
-        <td> How to get a discount on the ticket price? 
+        <td><p id="demo1"> How to get a discount on the ticket price? </p>
             <div class="dropdown">
-                <button class="dropbtn">Ask</button>
+                <script>
+                    function myFunction1() {
+                      document.getElementById("demo1").innerHTML = "Use our discount codes, linked in our page!"; 
+                      document.getElementById("demo1").style.color = "red";     
+                    }
+                    </script>
+                 <button class="dropbtn" type="button" onclick="myFunction1()">Ask</button>
+            </div>
         </td>
     </tr>
     <tr>
-        <td> Can I reserve more than one ticket for the said price?
+        <td><p id="demo2"> Can I reserve more than one ticket for the said price?</p>
              <div class="dropdown">
-            <button class="dropbtn">Ask</button></price>
+                 <script>
+                function myFunction2() {
+                    document.getElementById("demo2").innerHTML = "Yes you can reserve up to 10 tickets, providing ID."; 
+                    document.getElementById("demo2").style.color = "red";     
+                  }
+                  </script>
+                <button class="dropbtn" type="button" onclick="myFunction2()">Ask</button>
+             </div>
         </td>
     </tr>
 
