@@ -105,8 +105,8 @@ ul {
   letter-spacing: 2px;
   color: white;
   background-color: #ce225a;
-  border: none;
   border-radius: 10px;
+  border: none;
 }
 
 .active {
@@ -482,3 +482,8 @@ ul {
     margin-left: 0;
   }
 }
+
+/* #p1 {
+  border: 10px solid transparent;
+  border-image: url(images.png) 30% round;
+} */
