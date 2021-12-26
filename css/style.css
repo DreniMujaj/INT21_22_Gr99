@@ -71,119 +71,42 @@ ul {
   align-items: center;
 }
 
-/*Booking Form*/
+/* Booking Form */
 .booking-form {
-  width: 60%;
-  height: 30%;
+  width: 50%;
+  height: 40%;
   background-color: #201c2b;
   opacity: 0.8;
   padding: 20px;
   color: white;
-}
-
-.booking-up {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.booking-down {
-  width: 100%;
-  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .search {
-  width: 140%;
-  height: 30%;
+  width: 120%;
+  height: 15%;
+  border-radius: 5px;
 }
-.search2 {
-  width: 170%;
-  height: 40%;
+.date {
+  width: 110%;
+  height: 15%;
   background-color: #670f4c;
   color: white;
   border: none;
 }
 
-.button {
+.booking-button {
+  width: 100px;
+  height: 50px;
+  margin-top: 100px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
   background-color: #ce225a;
   border: none;
-  color: white;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 45px;
-}
-
-/* select input */
-/* The container must be positioned relative: */
-.custom-select {
-  position: relative;
-  font-family: Arial;
-  width: 200x;
-}
-
-.custom-select select {
-  display: none; /*hide original SELECT element: */
-}
-
-.select-selected {
-  background-color: #670f4c;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,
-.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: #670f4c;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .active {

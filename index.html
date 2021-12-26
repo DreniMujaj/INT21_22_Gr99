@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- favicon -->
     <link rel = "icon" href ="images/icon/images.png">
-    <!-- Lidhja me fontawesome icons -->
+    <!-- Lidhja me fontawesome icons,defer means to wait for the dom to be loaded -->
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <script defer src="fontawesome/js/all.js"></script>
+    
 </Head>
-<Body>
+<Body >
     <!-- header with icon -->
         <a href="index.html">
         <div class="icon">
@@ -31,40 +32,26 @@
          <!-- Booking form -->
       <div class="booking" >
             <form action="" class="booking-form">
-                <div class="booking-up">
-                    <p>From
-                    <div>
-                        <input type="text" placeholder="City or Aeroport" class="search">
-                    </div>
-                    </p>
-                    <p>To
-                    <div>
-                        <input type="text" placeholder="Country, region, county, city" class="search">
-                    </div>
-                    </p>
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                            <option value="0">Traveling class: </option>
-                            <option value="1">Economy</option>
-                            <option value="2">Premium economy</option>
-                            <option value="3">Business</option>
-                            <option value="4">First</option>
-                        </select>
-                    </div>
+                <div class="booking-left">
+                    <h3 style="letter-spacing: 1px;">From</h3>
+                    <input type="text" class="search" id="current-location" >
+                    <h3 style="letter-spacing: 1px;">To</h3>
+                    <input type="text" class="search" placeholder="Choose your place of destination">
                 </div>
-                <div class="booking-down">
-                    <div style="margin-left: 20px;" >
-                        <h4>Leaving on:</h4>
-                        <input type="date" class="search2">
-                    </div>
-                    <div style="margin-left: 70px;">
-                        <h4>Returning on:</h4>
-                        <input type="date" class="search2">
-                    </div>
-                    <div><button class="button">Find</button></div>
+                <div class="booking-right">
+                    <h3 style="letter-spacing: 1px;">Leaving on</h3>
+                    <input type="datetime-local" id="dt" class="date" >
+                    <h3 style="letter-spacing: 1px;">Returning on</h3>
+                    <input type="datetime-local" class="date">
                 </div>
+                <button type="submit" class="booking-button">Find</button>
             </form>
      </div> 
+     <!-- <script>
+        var now = new Date();
+        now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+        document.getElementById('dt').value = now.toISOString().slice(0,16);
+     </script> -->
 
     <h1 align="left" style="color: #361f33; margin-left: 80px; margin-top: 80px;"><bold>Book your holiday</bold></h1>
     <h1 align="kleft" style="color: #361f33; margin-left: 80px; " ><bold>Browse last minute quarantine-free deals</bold></h1>
