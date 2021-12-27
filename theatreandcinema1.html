@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="css/stylefortheatreandcinema.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <script defer src="fontawesome/js/all.js"></script>
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
 
 
     <style>
@@ -265,7 +280,6 @@
 
 
 
-
 <div>
     <div><h3 style="color: maroon;font-size: 20px;"><bold><a name="London">London's</a> rich theatre story</bold></h3>
 <p>Although the first purpose-built London theatres were found in East London and Southwark, its history can be traced all the way back to the 17th century, with the opening of the Theatre Royal on Drury Lane in 1663. The current building to hold that name is the fourth, and was opened in 1812.
@@ -302,7 +316,7 @@
         <td> Plays </td>
     </tr>
     <tr>
-        <td> <a href="#">Matilda</a> </td>
+        <td> <a href="#"><u>Matilda&#9830</u></a> </td>
         <td> The play that goes wrong </td>
         <td> Comedy </td>
     </tr>
