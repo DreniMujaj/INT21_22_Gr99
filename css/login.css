@@ -13,7 +13,7 @@ body {
   background-image: linear-gradient(43deg, #05dbf2, #b6e1f2, #f22e76, #f27999);
 }
 
-.main {
+.main1 {
   width: 25%;
   height: 60%;
   background-color: #361f33;
@@ -69,29 +69,6 @@ body {
   font-size: 14px;
   text-align: center;
   margin-left: 10px;
-}
-
-/* Style all input fields */
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-}
-
-/* Style the submit button */
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-}
-
-/* Style the container for inputs */
-.container {
-  background-color: #f1f1f1;
-  padding: 20px;
 }
 
 /* The message box is shown when the user clicks on the password field */
