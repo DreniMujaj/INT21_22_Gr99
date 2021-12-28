@@ -2,6 +2,12 @@
   padding: 80px;
   background-color:white;
 }
+#div1 {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
 
 .theatre-search {
   width: 100%;
