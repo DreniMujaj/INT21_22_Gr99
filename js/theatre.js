@@ -5,7 +5,11 @@ $("#teksti1").hover(function(){
 }, function(){
 $(this).css("color","pink");
 });
+$("#teksti1").click(function(){
+    $("#panel").slideToggle("slow");
 });
+});
+
 
 //For the records table
 $(document).ready(function(){
@@ -34,9 +38,9 @@ $(document).ready(function(){
         $("#disc1").fadeOut(6000);
     });
  
-        $("#fadein2").click(function(){
-            $("#disc2").fadeOut(6000);
-        });
+    $("#fadein2").click(function(){
+        $("#disc2").fadeOut(6000);
+    });
 
     });
 
