@@ -1,3 +1,12 @@
+//animation of the title
+$(document).ready(function(){ 
+    $("#beginning").hover(function(){
+        $(this).animate({ opacity: 0.8});
+    });
+    });
+
+
+
 //for the Record's text
 $(document).ready(function(){        
 $("#teksti1").hover(function(){
