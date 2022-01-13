@@ -1,10 +1,16 @@
 //animation of the title
 $(document).ready(function(){ 
     $("#beginning").hover(function(){
-        $(this).animate({ opacity: 0.8});
+        $(this).animate({ opacity: 0.6});
     });
     });
 
+$(document).ready(function(){
+    $('#tips').click(function(){
+        $(this).html("<b>Top 10 Theatre Shows<b>");
+    });
+
+});
 
 
 //for the Record's text
