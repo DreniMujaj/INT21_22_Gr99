@@ -9,9 +9,8 @@
     <!-- Lidhja me fontawesome icons,defer means to wait for the dom to be loaded -->
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <script defer src="fontawesome/js/all.js"></script>
-    
 </Head>
-<Body >
+<Body onload="startWorker()">
     <!-- header with icon -->
         <a href="index.html">
         <div class="icon">
@@ -107,6 +106,29 @@
                 </div>
             </div>
         </div>
+        <h3 align="kleft" style="color: #361f33; margin-left: 80px; " ><bold>Offert expires in: </bold><output id="result"></output></h3></p>
+
+        <script>
+        var w;
+
+        function startWorker() {
+        if (typeof(Worker) !== "undefined") {
+            if (typeof(w) == "undefined") {
+            w = new Worker("js/worker.js");
+            }
+            w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+            };
+        } else {
+            document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+        }
+        }
+
+        function stopWorker() {
+        w.terminate();
+        w = undefined;
+        }
+        </script>
 
     <h1 align="left" style="color: #361f33; margin-left: 80px; margin-top: 80px;"><bold>Explore experiences</bold></h1>
 
