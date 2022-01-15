@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/styleforflightandhotels.css" />
     <link href="fontawesome/css/all.css" rel="stylesheet" />
     <script defer src="fontawesome/js/all.js"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <a href="index.html">
@@ -62,14 +64,38 @@
             officiis laborum fugit corporis ad quis enim sint sed distinctio
             doloribus vitae eius explicabo eveniet, incidunt ipsam reiciendis
             quo voluptas quae!
+            
           </p>
-          <p>
+          
+          <p id="paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
             voluptatum, tempore odit vero est ad reiciendis error excepturi
             deleniti temporibus?
           </p>
+          <button id="btn3" style="background-color: #fff;">Animate the  second paragraph on the left</button>
+          
+          <script>
+            $(document).ready(function(){
+
+            $("#btn3").click(function(){
+              
+              $("#paragraph").animate({
+                left:'150px',
+                opacity:'1',
+                width:'100px',
+                height:'100px'
+
+              },3000)
+
+            });
+
+            });
+
+          </script>
+
+
         </div>
-        <div class="info-right">
+        <div  class="info-right">
           <img src="./images/hotel2.jpg" alt="Hotel" />
         </div>
       </div>
@@ -82,27 +108,60 @@
         <h2 class="l-heading">What Our Guests Say</h2>
         <div class="testimonial bg-primary">
           <img src="./images/person1.jpg" alt="Catherine" />
-          <p>
+          <p id="para1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             tenetur incidunt corporis ab quia repellat praesentium, iusto aut
             nulla minima ex culpa exercitationem qui quam earum perferendis
             doloremque reprehenderit iste voluptatum, quibusdam eius architecto.
             Eaque pariatur est cumque consequuntur aliquam!
+            
           </p>
+          <button onclick="fn1()" id="btn1">Hide the paragraph</button>
+          <button onclick="fn2()" id="btn2">Show the paragraph</button>
+         
         </div>
+        
+        <script>
+          function fn1()
+          {
+            $("#para1").fadeToggle(1000);
+          }
+
+          $("#btn2").click(function()
+          {
+            $("#para1").show();
+          });
+          </script>
+
 
         <div class="testimonial bg-primary">
           <img src="./images/person2.jpg" alt="Marcus" />
-          <p>
+          <p id="secondparagraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             tenetur incidunt corporis ab quia repellat praesentium, iusto aut
             nulla minima ex culpa exercitationem qui quam earum perferendis
             doloremque reprehenderit iste voluptatum, quibusdam eius architecto.
             Eaque pariatur est cumque consequuntur aliquam!
           </p>
+          <button id="btntoggle">Toggle the paragraph</button>
         </div>
       </div>
     </section>
+
+    <script>
+      $(document).ready(function(){
+        
+        $("#btntoggle").click(function(){
+
+          $("#secondparagraph").fadeToggle(1000,function(){
+            alert("FadeToggle is done!")
+
+          });
+
+        });
+
+      });
+    </script>
 
     <footer class="footer-distributed">
       <div class="footer-left">

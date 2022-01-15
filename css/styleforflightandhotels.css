@@ -204,3 +204,11 @@ p {
   margin-right: 20px;
   border-radius: 50%;
 }
+
+.paragraph
+{
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  opacity: 0.2;
+}
